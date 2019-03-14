@@ -8,6 +8,20 @@ As of 2019-03-05 the descriptive text is not complete (see the full paper for mi
 
 Feedback for improving the notebook or other aspects of the design is welcome...
 
+## Starting the Notebook
+
+*In order to find the Modelica files it is important that the notebook is started with the current working directory being set to the directory in which this README.md is located!*
+
+To achieve this, start the Julia REPL and change the current working directory of the Julia REPL into the directory in which this README.md is located. When start the notebook in the following way:
+
+```julia
+using IJulia
+notebook(dir=pwd())
+```
+This will set the notebook's working directory to the current working directory. Now everything should be set up correctly for running the examples in the `MagLevControlDesign.ipynb` notebook.
+
+---------
+
 ## Installation Notes
 
 I tested the Jupyter notebook successfully on Windows and Linux. However, it can be a bit tricky to set up the required tools if one hasn't worked with OpenModelica/Julia/Jupyter/OMJulia before. Therefore, some hints from my memory (please let me know if the description is not correct or should be improved):
@@ -53,15 +67,3 @@ using OMJulia
 ```
 
 If OMJulia fails to automatically install all dependencies the appearing errors will indicate which packages are missing. These packages can then be installed manually using the package manager.
-
-## Starting the Notebook
-
-*In order to find the Modelica files it is important that the notebook is started with the current working directory being set to the directory in which this README.md is located!*
-
-To achieve this, start the Julia REPL and change the current working directory of the Julia REPL into the directory in which this README.md is located. When start the notebook in the following way:
-
-```julia
-using IJulia
-notebook(dir=pwd())
-```
-This will set the notebook's working directory to the current working directory. Now everything should be set up correctly for running the examples in the `MagLevControlDesign.ipynb` notebook.
