@@ -6,6 +6,13 @@ Bernhard Thiele, Bernt Lie, Martin Sjölund, Adrian Pop, and Peter Fritzson. Con
 
 Feedback for improving the notebook or other aspects of the design is welcome...
 
+## Notable Changes
+
+Notable changes since the first release on Github:
+
+- 2020-02-09: Adapted notebook to restructured OMJulia API in commit [f4e1c15](https://github.com/bernhard-thiele/MagLevApp/commit/f4e1c152415cd24ddf9831fc41adc67a0f43dfdc).
+
+
 ## Starting the Notebook
 
 *In order to find the Modelica files it is important that the notebook is started with the current working directory being set to the directory in which this README.md is located!*
