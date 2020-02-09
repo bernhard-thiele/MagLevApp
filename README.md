@@ -56,7 +56,7 @@ The Julia kernel for [Jupyter](https://jupyter.org/) is provided by the Julia pa
 The simplest approach is to let IJulia install all the Jupyter related dependencies including Jupyter itself and a Python installation which is private to Julia below its `JULIA_DEPOT_PATH` directory. Using this approach all one has to enter at the Julia REPL is basically:
 
 ```julia
-using Pkg
+import Pkg
 Pkg.add("IJulia")
 using IJulia
 notebook()
@@ -66,8 +66,8 @@ notebook()
 Installation instructions for [OMJulia](https://github.com/OpenModelica/OMJulia.jl) are given on its Github site. Basically, one just has to do:
 
 ```julia
-using Pkg
-Pkg.clone("https://github.com/OpenModelica/OMJulia.jl")
+import Pkg
+Pkg.add(PackageSpec(url=”https://github.com/OpenModelica/OMJulia.jl”))
 using OMJulia
 ```
 
